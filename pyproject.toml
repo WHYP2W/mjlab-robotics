@@ -1,5 +1,5 @@
 [project]
-name = "anymal-c-velocity"
+name = "tron-pro-velocity"
 version = "0.1.0"
 description = "An example of how to use a custom robot with an existing task in mjlab"
 readme = "README.md"
@@ -19,10 +19,10 @@ dev = [
 
 [tool.ruff]
 indent-width = 2
-src = ["anymal_c_velocity"]
+src = ["tron_pro_velocity"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "B"]
 
 [project.entry-points."mjlab.tasks"]
-anymal_c_velocity = "anymal_c_velocity"
+tron_pro_velocity = "tron_pro_velocity"

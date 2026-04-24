@@ -1,4 +1,4 @@
-"""ANYbotics ANYmal C velocity environment configurations."""
+"""TRON2 Pro (WF_TRON1A) wheel-biped velocity task environment config."""
 
 from mjlab.envs import ManagerBasedRlEnvCfg
 from mjlab.envs.mdp.actions import JointPositionActionCfg
@@ -8,30 +8,33 @@ from mjlab.tasks.velocity import mdp
 from mjlab.tasks.velocity.mdp import UniformVelocityCommandCfg
 from mjlab.tasks.velocity.velocity_env_cfg import make_velocity_env_cfg
 
-from anymal_c_velocity.anymal_c.anymal_c_constants import (
-  ANYMAL_C_ACTION_SCALE,
-  get_anymal_c_robot_cfg,
+from tron_pro_velocity.tron_pro.tron_pro_constants import (
+  TRON_PRO_ACTION_SCALE,
+  get_tron_pro_robot_cfg,
 )
 
 
-def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
-  """Create ANYmal C rough terrain velocity configuration."""
+def tron_pro_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+  """TRON2 Pro 崎岖地形速度跟踪环境配置。
+
+  参数：
+    play: 是否处于回放/评测模式。True 时会关闭随机化、拉长 episode 等。
+  """
   cfg = make_velocity_env_cfg()
 
   cfg.sim.mujoco.ccd_iterations = 500
   cfg.sim.contact_sensor_maxmatch = 500
   cfg.sim.nconmax = 50
 
-  cfg.scene.entities = {"robot": get_anymal_c_robot_cfg()}
+  cfg.scene.entities = {"robot": get_tron_pro_robot_cfg()}
 
-  # Set raycast sensor frame to ANYmal C base.
   for sensor in cfg.scene.sensors or ():
     if sensor.name == "terrain_scan":
       assert isinstance(sensor, RayCastSensorCfg)
       sensor.frame.name = "base"
 
-  site_names = ("LF", "RF", "LH", "RH")
-  geom_names = ("LF_foot", "RF_foot", "LH_foot", "RH_foot")
+  site_names = ("L", "R")
+  geom_names = ("L_foot", "R_foot")
 
   feet_ground_cfg = ContactSensorCfg(
     name="feet_ground_contact",
@@ -47,9 +50,7 @@ def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
     primary=ContactMatch(
       mode="geom",
       entity="robot",
-      # Grab all collision geoms...
-      pattern=r".*_collision\d*$",
-      # Except for the foot geoms.
+      pattern=r".*_collision(\d*)?$",
       exclude=tuple(geom_names),
     ),
     secondary=ContactMatch(mode="body", pattern="terrain"),
@@ -67,7 +68,7 @@ def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
 
   joint_pos_action = cfg.actions["joint_pos"]
   assert isinstance(joint_pos_action, JointPositionActionCfg)
-  joint_pos_action.scale = ANYMAL_C_ACTION_SCALE
+  joint_pos_action.scale = TRON_PRO_ACTION_SCALE
 
   cfg.viewer.body_name = "base"
   cfg.viewer.distance = 2.0
@@ -81,19 +82,22 @@ def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
   cfg.events["base_com"].params["asset_cfg"].body_names = ("base",)
 
   cfg.rewards["pose"].params["std_standing"] = {
-    ".*HAA": 0.05,
-    ".*HFE": 0.05,
-    ".*KFE": 0.1,
+    "abad_.*_Joint": 0.08,
+    "hip_.*_Joint": 0.10,
+    "knee_.*_Joint": 0.15,
+    "wheel_.*_Joint": 1.0,
   }
   cfg.rewards["pose"].params["std_walking"] = {
-    ".*HAA": 0.3,
-    ".*HFE": 0.3,
-    ".*KFE": 0.6,
+    "abad_.*_Joint": 0.25,
+    "hip_.*_Joint": 0.30,
+    "knee_.*_Joint": 0.45,
+    "wheel_.*_Joint": 2.0,
   }
   cfg.rewards["pose"].params["std_running"] = {
-    ".*HAA": 0.3,
-    ".*HFE": 0.3,
-    ".*KFE": 0.6,
+    "abad_.*_Joint": 0.25,
+    "hip_.*_Joint": 0.30,
+    "knee_.*_Joint": 0.45,
+    "wheel_.*_Joint": 2.0,
   }
 
   cfg.rewards["upright"].params["asset_cfg"].body_names = ("base",)
@@ -115,9 +119,7 @@ def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
   assert isinstance(cmd, UniformVelocityCommandCfg)
   cmd.viz.z_offset = 0.5
 
-  # Apply play mode overrides.
   if play:
-    # Effectively infinite episode length.
     cfg.episode_length_s = int(1e9)
 
     cfg.observations["actor"].enable_corruption = False
@@ -133,27 +135,28 @@ def anymal_c_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
   return cfg
 
 
-def anymal_c_flat_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
-  """Create ANYmal C flat terrain velocity configuration."""
-  cfg = anymal_c_rough_env_cfg(play=play)
+def tron_pro_flat_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+  """TRON2 Pro 平坦地形速度跟踪环境配置。
+
+  在 rough 配置基础上关闭地形生成器、移除 terrain_scan 传感器，
+  适合前期快速验证训练流水线。
+  """
+  cfg = tron_pro_rough_env_cfg(play=play)
 
   cfg.sim.njmax = 300
   cfg.sim.mujoco.ccd_iterations = 50
   cfg.sim.contact_sensor_maxmatch = 64
 
-  # Switch to flat terrain.
   assert cfg.scene.terrain is not None
   cfg.scene.terrain.terrain_type = "plane"
   cfg.scene.terrain.terrain_generator = None
 
-  # Remove raycast sensor and height scan (no terrain to scan).
   cfg.scene.sensors = tuple(
     s for s in (cfg.scene.sensors or ()) if s.name != "terrain_scan"
   )
   del cfg.observations["actor"].terms["height_scan"]
   del cfg.observations["critic"].terms["height_scan"]
 
-  # Disable terrain curriculum.
   cfg.curriculum.pop("terrain_levels", None)
 
   return cfg

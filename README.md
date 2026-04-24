@@ -90,3 +90,94 @@ CUDA_VISIBLE_DEVICES=0 uv run train Mjlab-Velocity-Flat-Anymal-C \
 # 回放训练好的模型检查点
 uv run play Mjlab-Velocity-Flat-Anymal-C --wandb-run-path <wandb-run-path>
 ```
+
+---
+
+# 新增任务：TRON2 Pro 双足机器人速度跟踪
+
+本仓库在 ANYmal C 示例基础上扩展，增加了一个 **双足机器人 TRON2 Pro** 的速度跟踪任务，用于演示如何把 mjlab 的通用任务框架复用到不同形态的机器人上。
+
+## 项目结构
+
+```
+src/tron_pro_velocity/
+  __init__.py                        # 任务注册入口（注册两个 task_id）
+  env_cfgs.py                        # 双足环境配置（2 只脚、新关节 regex）
+  rl_cfg.py                          # 强化学习超参数（PPO）
+  tron_pro/
+    tron_pro_constants.py            # 双足机器人定义（执行器、碰撞、初始姿态）
+    xmls/
+      tron_pro.xml                   # 双足 MuJoCo MJCF 模板（骨架版，占位盒子）
+      assets/                        # 真实 mesh/texture 放这里（当前为空）
+```
+
+## 当前状态：已接入真实 WF_TRON1A 模型
+
+`tron_pro.xml` 已直接改为 `src/WF_TRON1A/xml/robot.xml` 的适配版本，不再是占位盒子。Mesh 文件通过相对路径从 `src/WF_TRON1A/meshes/` 加载。
+
+当前模型是轮足双足（wheel-biped）结构：
+- 每腿 4 个关节：`abad`、`hip`、`knee`、`wheel`
+- 左右轮碰撞体命名为 `L_foot` / `R_foot`（用于接触传感器）
+- 机身 body 名称统一为 `base`（用于 viewer / reward / sensor）
+
+## 关节命名约定
+
+每条腿 4 个关节，共 8 个驱动 DOF。命名规则如下（必须在 XML 和 Python 里保持一致）：
+
+| 缩写 | 含义 | 物理意义 |
+|---|---|---|
+| `abad` | 外展/内收关节 | 腿左右摆 |
+| `hip` | 髋关节 | 腿前后摆 |
+| `knee` | 膝关节 | 小腿屈伸 |
+| `wheel` | 轮关节 | 车轮滚动 |
+
+完整关节名示例：`abad_L_Joint`、`hip_R_Joint`、`wheel_L_Joint`。
+
+## 用 URDF 替换骨架的步骤
+
+拿到 TRON2 Pro 的 URDF 后，按顺序完成：
+
+1. **安装转换工具**：`pip install urdf2mjcf`（或使用 MuJoCo 自带的 `compile` 命令）。
+2. **执行转换**：把 URDF 转成 MJCF，得到 `.xml` 和 mesh 文件。
+3. **对齐命名**：保证 joint 名称仍匹配 `abad/hip/knee/wheel` 这四类 regex。
+4. **拷贝资源**：把 STL 放到 `src/WF_TRON1A/meshes/`，并在 XML `meshdir` 对齐路径。
+5. **替换 XML**：更新 `src/tron_pro_velocity/tron_pro/xmls/tron_pro.xml` 内容。
+6. **调整 constants**：更新 `tron_pro_constants.py` 里的 `LEG_EFFORT_LIMIT` / `WHEEL_EFFORT_LIMIT` / `ARMATURE`。
+7. **视觉检查**：运行 `uv run python -c "from tron_pro_velocity.tron_pro.tron_pro_constants import get_spec; print(get_spec().compile().nq)"`。
+
+## 使用方法
+
+```powershell
+# 健全性检查：让骨架版机器人在零动作下倒下（验证流程通畅）
+uv run play Mjlab-Velocity-Flat-Tron-Pro --agent zero
+
+# 训练（数据无意义，只验证 pipeline）
+$env:CUDA_VISIBLE_DEVICES="0"
+uv run train Mjlab-Velocity-Flat-Tron-Pro `
+  --env.scene.num-envs 2048 `
+  --agent.max-iterations 500
+
+# 等真实模型替换好后再做正式训练
+$env:CUDA_VISIBLE_DEVICES="0"
+uv run train Mjlab-Velocity-Rough-Tron-Pro `
+  --env.scene.num-envs 4096 `
+  --agent.max-iterations 10_000
+```
+
+## 两个任务的差异对照
+
+| 维度 | ANYmal C | TRON2 Pro |
+|---|---|---|
+| 形态 | 四足 | 双足 |
+| 脚数 | 4（LF/RF/LH/RH） | 2（L/R） |
+| 每条腿 DOF | 3（HAA/HFE/KFE） | 4（abad/hip/knee/wheel） |
+| 总驱动 DOF | 12 | 8 |
+| 初始高度 | 0.54 m | 0.85 m（WF_TRON1A 实模） |
+| 平衡难度 | 静稳定（支撑面大） | 动稳定（一直需要主动平衡） |
+
+## 下一步计划
+
+- [ ] 用短训练验证轮足任务稳定性（先 flat，再 rough）
+- [ ] 根据训练曲线微调轮关节与腿关节的动作尺度
+- [ ] 如果需要，把 wheel 关节从 position action 改为 velocity action
+
