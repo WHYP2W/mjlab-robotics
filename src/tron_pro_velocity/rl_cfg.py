@@ -20,6 +20,7 @@ def tron_pro_ppo_runner_cfg() -> RslRlOnPolicyRunnerCfg:
     PPO 算法超参数、实验名、最大迭代步数等。
   """
   return RslRlOnPolicyRunnerCfg(
+    # Actor/Critic share the same MLP size for stable early-stage tuning.
     actor=RslRlModelCfg(
       hidden_dims=(512, 256, 128),
       stochastic=True,
@@ -28,8 +29,10 @@ def tron_pro_ppo_runner_cfg() -> RslRlOnPolicyRunnerCfg:
       hidden_dims=(512, 256, 128),
     ),
     algorithm=RslRlPpoAlgorithmCfg(
+      # Keep modest exploration for wheel-biped balancing.
       entropy_coef=0.01,
     ),
+    # W&B / log directory namespace.
     experiment_name="tron_pro_velocity",
     max_iterations=10_000,
   )

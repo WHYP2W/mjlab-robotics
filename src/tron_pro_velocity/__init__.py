@@ -16,6 +16,7 @@ from .env_cfgs import (
 )
 from .rl_cfg import tron_pro_ppo_runner_cfg
 
+# Rough terrain variant: used for final policy training/evaluation.
 register_mjlab_task(
   task_id="Mjlab-Velocity-Rough-Tron-Pro",
   env_cfg=tron_pro_rough_env_cfg(),

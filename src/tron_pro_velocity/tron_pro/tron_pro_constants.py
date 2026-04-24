@@ -1,4 +1,11 @@
-"""TRON2 Pro (WF_TRON1A) wheel-biped constants for mjlab."""
+"""TRON2 Pro (WF_TRON1A) wheel-biped constants for mjlab.
+
+This module defines:
+1) how robot XML/meshes are loaded,
+2) actuator control parameters,
+3) initial standing pose,
+4) collision filtering and action scaling.
+"""
 
 from pathlib import Path
 
@@ -21,25 +28,30 @@ assert WF_TRON1A_MESH_DIR.exists(), f"Missing mesh directory: {WF_TRON1A_MESH_DI
 
 
 def get_assets(meshdir: str) -> dict[str, bytes]:
+  """Load STL mesh assets into MuJoCo in-memory asset dict."""
   assets: dict[str, bytes] = {}
   update_assets(assets, WF_TRON1A_MESH_DIR, meshdir)
   return assets
 
 
 def get_spec() -> mujoco.MjSpec:
+  """Build MjSpec from XML and attach mesh assets."""
   spec = mujoco.MjSpec.from_file(str(TRON_PRO_XML))
   spec.assets = get_assets(spec.meshdir)
   return spec
 
 
+# Effort limits from the robot model (legs use higher torque than wheels).
 LEG_EFFORT_LIMIT = 80.0
 WHEEL_EFFORT_LIMIT = 40.0
 
+# MuJoCo default joint armature value from the source robot XML.
 ARMATURE = 0.01
 
 NATURAL_FREQ = 10 * 2.0 * 3.1415926535  # 目标固有频率 10 Hz（角频率）
 DAMPING_RATIO = 2.0  # 过阻尼：>1 避免抖动
 
+# PD gains derived from natural frequency / damping ratio.
 STIFFNESS = ARMATURE * NATURAL_FREQ**2
 DAMPING = 2 * DAMPING_RATIO * ARMATURE * NATURAL_FREQ
 
@@ -63,6 +75,8 @@ TRON_PRO_WHEEL_ACTUATOR_CFG = BuiltinPositionActuatorCfg(
   armature=ARMATURE,
 )
 
+# Explicit left/right initialization avoids asymmetric starts
+# because hip/knee axes are mirrored in WF_TRON1A.
 INIT_STATE = EntityCfg.InitialStateCfg(
   pos=(0.0, 0.0, 0.85),
   joint_pos={
@@ -139,6 +153,7 @@ for _a in TRON_PRO_ARTICULATION.actuators:
   _names = _a.target_names_expr
   assert _e is not None
   for _n in _names:
+    # Smaller scale -> smoother control, less saturation at startup.
     TRON_PRO_ACTION_SCALE[_n] = 0.25 * _e / _s
 
 
