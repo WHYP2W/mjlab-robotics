@@ -5,22 +5,22 @@
 
 注册后，你可以用命令行调用：
   uv run train Mjlab-Velocity-Flat-Tron-Pro
-  uv run train Mjlab-Velocity-Rough-Tron-Pro
 """
 
 from mjlab.tasks.registry import register_mjlab_task
 from mjlab.tasks.velocity.rl import VelocityOnPolicyRunner
 
 from .env_cfgs import (
+  tron_pro_flat_env_cfg,
   tron_pro_rough_env_cfg,
 )
 from .rl_cfg import tron_pro_ppo_runner_cfg
 
-# Rough terrain variant: used for final policy training/evaluation.
+# Only keep flat task registration.
 register_mjlab_task(
-  task_id="Mjlab-Velocity-Rough-Tron-Pro",
-  env_cfg=tron_pro_rough_env_cfg(),
-  play_env_cfg=tron_pro_rough_env_cfg(play=True),
+  task_id="Mjlab-Velocity-Flat-Tron-Pro",
+  env_cfg=tron_pro_flat_env_cfg(),
+  play_env_cfg=tron_pro_flat_env_cfg(play=True),
   rl_cfg=tron_pro_ppo_runner_cfg(),
   runner_cls=VelocityOnPolicyRunner,
 )

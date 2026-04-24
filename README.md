@@ -101,7 +101,7 @@ uv run play Mjlab-Velocity-Flat-Anymal-C --wandb-run-path <wandb-run-path>
 
 ```
 src/tron_pro_velocity/
-  __init__.py                        # 任务注册入口（注册两个 task_id）
+  __init__.py                        # 任务注册入口（当前仅注册 flat task）
   env_cfgs.py                        # 双足环境配置（2 只脚、新关节 regex）
   rl_cfg.py                          # 强化学习超参数（PPO）
   tron_pro/
@@ -157,11 +157,8 @@ uv run train Mjlab-Velocity-Flat-Tron-Pro `
   --env.scene.num-envs 2048 `
   --agent.max-iterations 500
 
-# 等真实模型替换好后再做正式训练
-$env:CUDA_VISIBLE_DEVICES="0"
-uv run train Mjlab-Velocity-Rough-Tron-Pro `
-  --env.scene.num-envs 4096 `
-  --agent.max-iterations 10_000
+# 当前项目仅保留 flat 任务
+# 如果你后续需要 rough，请先在 __init__.py 重新注册 rough task_id
 ```
 
 ## 两个任务的差异对照
@@ -177,7 +174,7 @@ uv run train Mjlab-Velocity-Rough-Tron-Pro `
 
 ## 下一步计划
 
-- [ ] 用短训练验证轮足任务稳定性（先 flat，再 rough）
+- [ ] 用短训练验证轮足任务稳定性（flat）
 - [ ] 根据训练曲线微调轮关节与腿关节的动作尺度
 - [ ] 如果需要，把 wheel 关节从 position action 改为 velocity action
 

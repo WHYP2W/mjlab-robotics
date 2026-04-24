@@ -147,3 +147,31 @@ def tron_pro_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
         cfg.scene.terrain.terrain_generator.border_width = 10.0
 
   return cfg
+
+
+def tron_pro_flat_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+  """TRON2 Pro 平地速度任务配置（仅保留 flat 任务时使用）。"""
+  # Reuse rough config, then simplify terrain and sensor stack.
+  cfg = tron_pro_rough_env_cfg(play=play)
+
+  cfg.sim.njmax = 300
+  cfg.sim.mujoco.ccd_iterations = 50
+  cfg.sim.contact_sensor_maxmatch = 256
+  cfg.sim.nconmax = 128
+
+  # Switch to flat terrain.
+  assert cfg.scene.terrain is not None
+  cfg.scene.terrain.terrain_type = "plane"
+  cfg.scene.terrain.terrain_generator = None
+
+  # No terrain height scan needed on flat ground.
+  cfg.scene.sensors = tuple(
+    s for s in (cfg.scene.sensors or ()) if s.name != "terrain_scan"
+  )
+  cfg.observations["actor"].terms.pop("height_scan", None)
+  cfg.observations["critic"].terms.pop("height_scan", None)
+
+  # Remove terrain curriculum in flat setup.
+  cfg.curriculum.pop("terrain_levels", None)
+
+  return cfg
