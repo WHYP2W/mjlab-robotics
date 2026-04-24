@@ -23,8 +23,10 @@ def tron_pro_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
   cfg = make_velocity_env_cfg()
 
   cfg.sim.mujoco.ccd_iterations = 500
-  cfg.sim.contact_sensor_maxmatch = 500
-  cfg.sim.nconmax = 50
+  # Wheel-biped on rough hfield creates many simultaneous contacts.
+  # Increase contact buffers to avoid "height field collision overflow".
+  cfg.sim.contact_sensor_maxmatch = 2000
+  cfg.sim.nconmax = 400
 
   cfg.scene.entities = {"robot": get_tron_pro_robot_cfg()}
 
@@ -131,32 +133,5 @@ def tron_pro_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
         cfg.scene.terrain.terrain_generator.num_cols = 5
         cfg.scene.terrain.terrain_generator.num_rows = 5
         cfg.scene.terrain.terrain_generator.border_width = 10.0
-
-  return cfg
-
-
-def tron_pro_flat_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
-  """TRON2 Pro 平坦地形速度跟踪环境配置。
-
-  在 rough 配置基础上关闭地形生成器、移除 terrain_scan 传感器，
-  适合前期快速验证训练流水线。
-  """
-  cfg = tron_pro_rough_env_cfg(play=play)
-
-  cfg.sim.njmax = 300
-  cfg.sim.mujoco.ccd_iterations = 50
-  cfg.sim.contact_sensor_maxmatch = 64
-
-  assert cfg.scene.terrain is not None
-  cfg.scene.terrain.terrain_type = "plane"
-  cfg.scene.terrain.terrain_generator = None
-
-  cfg.scene.sensors = tuple(
-    s for s in (cfg.scene.sensors or ()) if s.name != "terrain_scan"
-  )
-  del cfg.observations["actor"].terms["height_scan"]
-  del cfg.observations["critic"].terms["height_scan"]
-
-  cfg.curriculum.pop("terrain_levels", None)
 
   return cfg

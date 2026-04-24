@@ -70,8 +70,8 @@ INIT_STATE = EntityCfg.InitialStateCfg(
     "abad_R_Joint": 0.0,
     # Left/right hip & knee joint axes are opposite in WF_TRON1A.
     # Set mirrored initial values explicitly to keep stance symmetric.
-    "hip_L_Joint": 0.0,
-    "hip_R_Joint": 0.0,
+    "hip_L_Joint": 0.3,
+    "hip_R_Joint": -0.3,
     "knee_L_Joint": 0.6,
     "knee_R_Joint": -0.6,
     "wheel_L_Joint": 0.0,

@@ -1,0 +1,2026 @@
+[34m[1mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.
+################################################################################
+[1m                           Learning iteration 0/10000                           [0m
+
+                            Total steps: 24576
+                       Steps per second: 3842
+                        Collection time: 5.964s
+                          Learning time: 0.432s
+                        Mean value loss: 0.1662
+                    Mean surrogate loss: 0.0281
+                      Mean entropy loss: 11.3375
+                            Mean reward: -0.50
+                    Mean episode length: 23.53
+                  Mean action noise std: 1.00
+   Episode_Reward/track_linear_velocity: 0.0008
+  Episode_Reward/track_angular_velocity: 0.0007
+                 Episode_Reward/upright: 0.0088
+                    Episode_Reward/pose: 0.0084
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0005
+          Episode_Reward/action_rate_l2: -0.0187
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0124
+       Episode_Reward/foot_swing_height: -0.0022
+               Episode_Reward/foot_slip: -0.0014
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 3.4958
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0432
+            Metrics/twist/error_vel_yaw: 0.0309
+           Episode_Termination/time_out: 1.4583
+          Episode_Termination/fell_over: 7.8333
+    Episode_Termination/illegal_contact: 0.2500
+               Metrics/peak_height_mean: 0.2182
+             Metrics/slip_velocity_mean: 0.3867
+             Metrics/landing_force_mean: 179.2313
+--------------------------------------------------------------------------------
+                         Iteration time: 6.40s
+                           Time elapsed: 00:00:06
+                                    ETA: 17:45:55
+[34m[1mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.
+
+################################################################################
+[1m                           Learning iteration 1/10000                           [0m
+
+                            Total steps: 49152
+                       Steps per second: 8080
+                        Collection time: 2.769s
+                          Learning time: 0.272s
+                        Mean value loss: 0.0604
+                    Mean surrogate loss: -0.0015
+                      Mean entropy loss: 11.3282
+                            Mean reward: -0.86
+                    Mean episode length: 33.47
+                  Mean action noise std: 1.00
+   Episode_Reward/track_linear_velocity: 0.0029
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0143
+                    Episode_Reward/pose: 0.0188
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0016
+          Episode_Reward/action_rate_l2: -0.0530
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0149
+       Episode_Reward/foot_swing_height: -0.0087
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 2.8679
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0994
+            Metrics/twist/error_vel_yaw: 0.0884
+           Episode_Termination/time_out: 0.2083
+          Episode_Termination/fell_over: 34.5833
+    Episode_Termination/illegal_contact: 2.9167
+               Metrics/peak_height_mean: 0.2471
+             Metrics/slip_velocity_mean: 0.4075
+             Metrics/landing_force_mean: 206.4038
+--------------------------------------------------------------------------------
+                         Iteration time: 3.04s
+                           Time elapsed: 00:00:09
+                                    ETA: 13:06:17
+
+################################################################################
+[1m                           Learning iteration 2/10000                           [0m
+
+                            Total steps: 73728
+                       Steps per second: 8158
+                        Collection time: 2.734s
+                          Learning time: 0.279s
+                        Mean value loss: 0.0283
+                    Mean surrogate loss: -0.0059
+                      Mean entropy loss: 11.2742
+                            Mean reward: -0.70
+                    Mean episode length: 32.41
+                  Mean action noise std: 0.98
+   Episode_Reward/track_linear_velocity: 0.0023
+  Episode_Reward/track_angular_velocity: 0.0011
+                 Episode_Reward/upright: 0.0140
+                    Episode_Reward/pose: 0.0175
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0015
+          Episode_Reward/action_rate_l2: -0.0470
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0109
+       Episode_Reward/foot_swing_height: -0.0061
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 2.2849
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0951
+            Metrics/twist/error_vel_yaw: 0.0789
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 31.7917
+    Episode_Termination/illegal_contact: 2.3333
+               Metrics/peak_height_mean: 0.2239
+             Metrics/slip_velocity_mean: 0.4101
+             Metrics/landing_force_mean: 203.9673
+--------------------------------------------------------------------------------
+                         Iteration time: 3.01s
+                           Time elapsed: 00:00:12
+                                    ETA: 11:31:26
+
+################################################################################
+[1m                           Learning iteration 3/10000                           [0m
+
+                            Total steps: 98304
+                       Steps per second: 9695
+                        Collection time: 2.425s
+                          Learning time: 0.110s
+                        Mean value loss: 0.0236
+                    Mean surrogate loss: -0.0057
+                      Mean entropy loss: 11.1453
+                            Mean reward: -0.56
+                    Mean episode length: 31.64
+                  Mean action noise std: 0.97
+   Episode_Reward/track_linear_velocity: 0.0026
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0146
+                    Episode_Reward/pose: 0.0182
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0015
+          Episode_Reward/action_rate_l2: -0.0480
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0108
+       Episode_Reward/foot_swing_height: -0.0045
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 1.7217
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1004
+            Metrics/twist/error_vel_yaw: 0.0829
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 29.7917
+    Episode_Termination/illegal_contact: 3.7917
+               Metrics/peak_height_mean: 0.2217
+             Metrics/slip_velocity_mean: 0.4076
+             Metrics/landing_force_mean: 211.3106
+--------------------------------------------------------------------------------
+                         Iteration time: 2.53s
+                           Time elapsed: 00:00:14
+                                    ETA: 10:24:06
+
+################################################################################
+[1m                           Learning iteration 4/10000                           [0m
+
+                            Total steps: 122880
+                       Steps per second: 11164
+                        Collection time: 2.094s
+                          Learning time: 0.108s
+                        Mean value loss: 0.0142
+                    Mean surrogate loss: -0.0047
+                      Mean entropy loss: 10.9540
+                            Mean reward: -0.40
+                    Mean episode length: 30.87
+                  Mean action noise std: 0.94
+   Episode_Reward/track_linear_velocity: 0.0025
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0147
+                    Episode_Reward/pose: 0.0176
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0015
+          Episode_Reward/action_rate_l2: -0.0453
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0079
+       Episode_Reward/foot_swing_height: -0.0033
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 1.2450
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0977
+            Metrics/twist/error_vel_yaw: 0.0812
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 31.4583
+    Episode_Termination/illegal_contact: 3.0417
+               Metrics/peak_height_mean: 0.2166
+             Metrics/slip_velocity_mean: 0.3964
+             Metrics/landing_force_mean: 211.0441
+--------------------------------------------------------------------------------
+                         Iteration time: 2.20s
+                           Time elapsed: 00:00:17
+                                    ETA: 09:32:34
+
+################################################################################
+[1m                           Learning iteration 5/10000                           [0m
+
+                            Total steps: 147456
+                       Steps per second: 10931
+                        Collection time: 2.136s
+                          Learning time: 0.112s
+                        Mean value loss: 0.0098
+                    Mean surrogate loss: -0.0109
+                      Mean entropy loss: 10.6952
+                            Mean reward: -0.33
+                    Mean episode length: 30.12
+                  Mean action noise std: 0.91
+   Episode_Reward/track_linear_velocity: 0.0025
+  Episode_Reward/track_angular_velocity: 0.0011
+                 Episode_Reward/upright: 0.0145
+                    Episode_Reward/pose: 0.0174
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0015
+          Episode_Reward/action_rate_l2: -0.0416
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0064
+       Episode_Reward/foot_swing_height: -0.0028
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.8476
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0949
+            Metrics/twist/error_vel_yaw: 0.0822
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 31.7500
+    Episode_Termination/illegal_contact: 2.5833
+               Metrics/peak_height_mean: 0.2080
+             Metrics/slip_velocity_mean: 0.3926
+             Metrics/landing_force_mean: 208.1988
+--------------------------------------------------------------------------------
+                         Iteration time: 2.25s
+                           Time elapsed: 00:00:19
+                                    ETA: 08:59:30
+
+################################################################################
+[1m                           Learning iteration 6/10000                           [0m
+
+                            Total steps: 172032
+                       Steps per second: 11174
+                        Collection time: 2.096s
+                          Learning time: 0.104s
+                        Mean value loss: 0.0080
+                    Mean surrogate loss: -0.0121
+                      Mean entropy loss: 10.4355
+                            Mean reward: -0.22
+                    Mean episode length: 30.52
+                  Mean action noise std: 0.88
+   Episode_Reward/track_linear_velocity: 0.0023
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0145
+                    Episode_Reward/pose: 0.0170
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0014
+          Episode_Reward/action_rate_l2: -0.0380
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0048
+       Episode_Reward/foot_swing_height: -0.0019
+               Episode_Reward/foot_slip: -0.0009
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.5211
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0927
+            Metrics/twist/error_vel_yaw: 0.0752
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 32.2917
+    Episode_Termination/illegal_contact: 2.4583
+               Metrics/peak_height_mean: 0.2033
+             Metrics/slip_velocity_mean: 0.3788
+             Metrics/landing_force_mean: 221.1325
+--------------------------------------------------------------------------------
+                         Iteration time: 2.20s
+                           Time elapsed: 00:00:21
+                                    ETA: 08:34:43
+
+################################################################################
+[1m                           Learning iteration 7/10000                           [0m
+
+                            Total steps: 196608
+                       Steps per second: 11188
+                        Collection time: 2.090s
+                          Learning time: 0.107s
+                        Mean value loss: 0.0057
+                    Mean surrogate loss: -0.0145
+                      Mean entropy loss: 10.2150
+                            Mean reward: -0.12
+                    Mean episode length: 30.80
+                  Mean action noise std: 0.85
+   Episode_Reward/track_linear_velocity: 0.0023
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0146
+                    Episode_Reward/pose: 0.0173
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0013
+          Episode_Reward/action_rate_l2: -0.0351
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0041
+       Episode_Reward/foot_swing_height: -0.0013
+               Episode_Reward/foot_slip: -0.0009
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.3032
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0930
+            Metrics/twist/error_vel_yaw: 0.0743
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 32.2083
+    Episode_Termination/illegal_contact: 1.8333
+               Metrics/peak_height_mean: 0.2016
+             Metrics/slip_velocity_mean: 0.3706
+             Metrics/landing_force_mean: 216.3624
+--------------------------------------------------------------------------------
+                         Iteration time: 2.20s
+                           Time elapsed: 00:00:23
+                                    ETA: 08:16:03
+
+################################################################################
+[1m                           Learning iteration 8/10000                           [0m
+
+                            Total steps: 221184
+                       Steps per second: 11005
+                        Collection time: 2.105s
+                          Learning time: 0.128s
+                        Mean value loss: 0.0048
+                    Mean surrogate loss: -0.0125
+                      Mean entropy loss: 9.9218
+                            Mean reward: -0.04
+                    Mean episode length: 29.97
+                  Mean action noise std: 0.83
+   Episode_Reward/track_linear_velocity: 0.0023
+  Episode_Reward/track_angular_velocity: 0.0013
+                 Episode_Reward/upright: 0.0146
+                    Episode_Reward/pose: 0.0176
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0014
+          Episode_Reward/action_rate_l2: -0.0326
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0034
+       Episode_Reward/foot_swing_height: -0.0012
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.1552
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0927
+            Metrics/twist/error_vel_yaw: 0.0708
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 33.8750
+    Episode_Termination/illegal_contact: 1.7917
+               Metrics/peak_height_mean: 0.2036
+             Metrics/slip_velocity_mean: 0.3682
+             Metrics/landing_force_mean: 214.3094
+--------------------------------------------------------------------------------
+                         Iteration time: 2.23s
+                           Time elapsed: 00:00:26
+                                    ETA: 08:02:12
+
+################################################################################
+[1m                           Learning iteration 9/10000                           [0m
+
+                            Total steps: 245760
+                       Steps per second: 10891
+                        Collection time: 2.139s
+                          Learning time: 0.118s
+                        Mean value loss: 0.0042
+                    Mean surrogate loss: -0.0109
+                      Mean entropy loss: 9.7102
+                            Mean reward: 0.03
+                    Mean episode length: 28.73
+                  Mean action noise std: 0.80
+   Episode_Reward/track_linear_velocity: 0.0019
+  Episode_Reward/track_angular_velocity: 0.0012
+                 Episode_Reward/upright: 0.0146
+                    Episode_Reward/pose: 0.0175
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0013
+          Episode_Reward/action_rate_l2: -0.0291
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0030
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0626
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0906
+            Metrics/twist/error_vel_yaw: 0.0674
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 34.6667
+    Episode_Termination/illegal_contact: 1.5833
+               Metrics/peak_height_mean: 0.2010
+             Metrics/slip_velocity_mean: 0.3597
+             Metrics/landing_force_mean: 208.1413
+--------------------------------------------------------------------------------
+                         Iteration time: 2.26s
+                           Time elapsed: 00:00:28
+                                    ETA: 07:51:31
+
+################################################################################
+[1m                          Learning iteration 10/10000                           [0m
+
+                            Total steps: 270336
+                       Steps per second: 10303
+                        Collection time: 2.235s
+                          Learning time: 0.150s
+                        Mean value loss: 0.0040
+                    Mean surrogate loss: -0.0103
+                      Mean entropy loss: 9.5261
+                            Mean reward: 0.06
+                    Mean episode length: 27.68
+                  Mean action noise std: 0.79
+   Episode_Reward/track_linear_velocity: 0.0022
+  Episode_Reward/track_angular_velocity: 0.0013
+                 Episode_Reward/upright: 0.0145
+                    Episode_Reward/pose: 0.0174
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0011
+          Episode_Reward/action_rate_l2: -0.0267
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0028
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0229
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0879
+            Metrics/twist/error_vel_yaw: 0.0649
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 35.6667
+    Episode_Termination/illegal_contact: 1.2083
+               Metrics/peak_height_mean: 0.2044
+             Metrics/slip_velocity_mean: 0.3490
+             Metrics/landing_force_mean: 219.3504
+--------------------------------------------------------------------------------
+                         Iteration time: 2.39s
+                           Time elapsed: 00:00:30
+                                    ETA: 07:44:42
+
+################################################################################
+[1m                          Learning iteration 11/10000                           [0m
+
+                            Total steps: 294912
+                       Steps per second: 7808
+                        Collection time: 2.851s
+                          Learning time: 0.296s
+                        Mean value loss: 0.0025
+                    Mean surrogate loss: -0.0161
+                      Mean entropy loss: 9.3975
+                            Mean reward: 0.14
+                    Mean episode length: 28.09
+                  Mean action noise std: 0.77
+   Episode_Reward/track_linear_velocity: 0.0022
+  Episode_Reward/track_angular_velocity: 0.0014
+                 Episode_Reward/upright: 0.0147
+                    Episode_Reward/pose: 0.0173
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0010
+          Episode_Reward/action_rate_l2: -0.0249
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0023
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0007
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0059
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0863
+            Metrics/twist/error_vel_yaw: 0.0639
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 35.0000
+    Episode_Termination/illegal_contact: 0.8750
+               Metrics/peak_height_mean: 0.2045
+             Metrics/slip_velocity_mean: 0.3436
+             Metrics/landing_force_mean: 217.3481
+--------------------------------------------------------------------------------
+                         Iteration time: 3.15s
+                           Time elapsed: 00:00:33
+                                    ETA: 07:49:36
+
+################################################################################
+[1m                          Learning iteration 12/10000                           [0m
+
+                            Total steps: 319488
+                       Steps per second: 7640
+                        Collection time: 2.953s
+                          Learning time: 0.263s
+                        Mean value loss: 0.0028
+                    Mean surrogate loss: -0.0144
+                      Mean entropy loss: 9.2129
+                            Mean reward: 0.17
+                    Mean episode length: 28.55
+                  Mean action noise std: 0.76
+   Episode_Reward/track_linear_velocity: 0.0022
+  Episode_Reward/track_angular_velocity: 0.0014
+                 Episode_Reward/upright: 0.0150
+                    Episode_Reward/pose: 0.0176
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0008
+          Episode_Reward/action_rate_l2: -0.0238
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0023
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0007
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0023
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0868
+            Metrics/twist/error_vel_yaw: 0.0641
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 35.3750
+    Episode_Termination/illegal_contact: 0.7917
+               Metrics/peak_height_mean: 0.2015
+             Metrics/slip_velocity_mean: 0.3428
+             Metrics/landing_force_mean: 215.7935
+--------------------------------------------------------------------------------
+                         Iteration time: 3.22s
+                           Time elapsed: 00:00:37
+                                    ETA: 07:54:37
+
+################################################################################
+[1m                          Learning iteration 13/10000                           [0m
+
+                            Total steps: 344064
+                       Steps per second: 8465
+                        Collection time: 2.788s
+                          Learning time: 0.115s
+                        Mean value loss: 0.0026
+                    Mean surrogate loss: -0.0145
+                      Mean entropy loss: 9.0971
+                            Mean reward: 0.21
+                    Mean episode length: 30.00
+                  Mean action noise std: 0.75
+   Episode_Reward/track_linear_velocity: 0.0024
+  Episode_Reward/track_angular_velocity: 0.0015
+                 Episode_Reward/upright: 0.0155
+                    Episode_Reward/pose: 0.0181
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0007
+          Episode_Reward/action_rate_l2: -0.0228
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0021
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0007
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0007
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0867
+            Metrics/twist/error_vel_yaw: 0.0622
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 33.7917
+    Episode_Termination/illegal_contact: 1.1667
+               Metrics/peak_height_mean: 0.2029
+             Metrics/slip_velocity_mean: 0.3351
+             Metrics/landing_force_mean: 209.6012
+--------------------------------------------------------------------------------
+                         Iteration time: 2.90s
+                           Time elapsed: 00:00:39
+                                    ETA: 07:55:11
+
+################################################################################
+[1m                          Learning iteration 14/10000                           [0m
+
+                            Total steps: 368640
+                       Steps per second: 10839
+                        Collection time: 2.160s
+                          Learning time: 0.108s
+                        Mean value loss: 0.0036
+                    Mean surrogate loss: -0.0119
+                      Mean entropy loss: 9.0339
+                            Mean reward: 0.28
+                    Mean episode length: 29.65
+                  Mean action noise std: 0.75
+   Episode_Reward/track_linear_velocity: 0.0026
+  Episode_Reward/track_angular_velocity: 0.0016
+                 Episode_Reward/upright: 0.0160
+                    Episode_Reward/pose: 0.0191
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0006
+          Episode_Reward/action_rate_l2: -0.0220
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0023
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0007
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0891
+            Metrics/twist/error_vel_yaw: 0.0638
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 33.9167
+    Episode_Termination/illegal_contact: 1.1667
+               Metrics/peak_height_mean: 0.2016
+             Metrics/slip_velocity_mean: 0.3309
+             Metrics/landing_force_mean: 219.4742
+--------------------------------------------------------------------------------
+                         Iteration time: 2.27s
+                           Time elapsed: 00:00:42
+                                    ETA: 07:48:37
+
+################################################################################
+[1m                          Learning iteration 15/10000                           [0m
+
+                            Total steps: 393216
+                       Steps per second: 10896
+                        Collection time: 2.151s
+                          Learning time: 0.105s
+                        Mean value loss: 0.0034
+                    Mean surrogate loss: -0.0133
+                      Mean entropy loss: 8.9936
+                            Mean reward: 0.33
+                    Mean episode length: 31.01
+                  Mean action noise std: 0.74
+   Episode_Reward/track_linear_velocity: 0.0029
+  Episode_Reward/track_angular_velocity: 0.0016
+                 Episode_Reward/upright: 0.0169
+                    Episode_Reward/pose: 0.0204
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0004
+          Episode_Reward/action_rate_l2: -0.0226
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0023
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0007
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0914
+            Metrics/twist/error_vel_yaw: 0.0667
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 33.1250
+    Episode_Termination/illegal_contact: 0.9583
+               Metrics/peak_height_mean: 0.1988
+             Metrics/slip_velocity_mean: 0.3321
+             Metrics/landing_force_mean: 207.9105
+--------------------------------------------------------------------------------
+                         Iteration time: 2.26s
+                           Time elapsed: 00:00:44
+                                    ETA: 07:42:44
+
+################################################################################
+[1m                          Learning iteration 16/10000                           [0m
+
+                            Total steps: 417792
+                       Steps per second: 10774
+                        Collection time: 2.172s
+                          Learning time: 0.109s
+                        Mean value loss: 0.0048
+                    Mean surrogate loss: -0.0098
+                      Mean entropy loss: 8.9563
+                            Mean reward: 0.40
+                    Mean episode length: 32.16
+                  Mean action noise std: 0.74
+   Episode_Reward/track_linear_velocity: 0.0031
+  Episode_Reward/track_angular_velocity: 0.0017
+                 Episode_Reward/upright: 0.0175
+                    Episode_Reward/pose: 0.0216
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0002
+          Episode_Reward/action_rate_l2: -0.0225
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0023
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.0971
+            Metrics/twist/error_vel_yaw: 0.0688
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 30.8333
+    Episode_Termination/illegal_contact: 0.7083
+               Metrics/peak_height_mean: 0.1989
+             Metrics/slip_velocity_mean: 0.3340
+             Metrics/landing_force_mean: 201.2711
+--------------------------------------------------------------------------------
+                         Iteration time: 2.28s
+                           Time elapsed: 00:00:46
+                                    ETA: 07:37:48
+
+################################################################################
+[1m                          Learning iteration 17/10000                           [0m
+
+                            Total steps: 442368
+                       Steps per second: 10625
+                        Collection time: 2.206s
+                          Learning time: 0.107s
+                        Mean value loss: 0.0043
+                    Mean surrogate loss: -0.0131
+                      Mean entropy loss: 8.8903
+                            Mean reward: 0.43
+                    Mean episode length: 33.23
+                  Mean action noise std: 0.73
+   Episode_Reward/track_linear_velocity: 0.0036
+  Episode_Reward/track_angular_velocity: 0.0019
+                 Episode_Reward/upright: 0.0186
+                    Episode_Reward/pose: 0.0228
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0002
+          Episode_Reward/action_rate_l2: -0.0232
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0025
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1016
+            Metrics/twist/error_vel_yaw: 0.0699
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 30.8750
+    Episode_Termination/illegal_contact: 1.2083
+               Metrics/peak_height_mean: 0.1978
+             Metrics/slip_velocity_mean: 0.3289
+             Metrics/landing_force_mean: 203.1683
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:00:49
+                                    ETA: 07:33:42
+
+################################################################################
+[1m                          Learning iteration 18/10000                           [0m
+
+                            Total steps: 466944
+                       Steps per second: 10339
+                        Collection time: 2.241s
+                          Learning time: 0.136s
+                        Mean value loss: 0.0048
+                    Mean surrogate loss: -0.0118
+                      Mean entropy loss: 8.8175
+                            Mean reward: 0.44
+                    Mean episode length: 33.39
+                  Mean action noise std: 0.72
+   Episode_Reward/track_linear_velocity: 0.0040
+  Episode_Reward/track_angular_velocity: 0.0019
+                 Episode_Reward/upright: 0.0197
+                    Episode_Reward/pose: 0.0243
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0237
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0026
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1062
+            Metrics/twist/error_vel_yaw: 0.0752
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 28.4167
+    Episode_Termination/illegal_contact: 1.7083
+               Metrics/peak_height_mean: 0.1921
+             Metrics/slip_velocity_mean: 0.3238
+             Metrics/landing_force_mean: 196.1367
+--------------------------------------------------------------------------------
+                         Iteration time: 2.38s
+                           Time elapsed: 00:00:51
+                                    ETA: 07:30:35
+
+################################################################################
+[1m                          Learning iteration 19/10000                           [0m
+
+                            Total steps: 491520
+                       Steps per second: 10386
+                        Collection time: 2.257s
+                          Learning time: 0.109s
+                        Mean value loss: 0.0052
+                    Mean surrogate loss: -0.0119
+                      Mean entropy loss: 8.7359
+                            Mean reward: 0.49
+                    Mean episode length: 35.72
+                  Mean action noise std: 0.72
+   Episode_Reward/track_linear_velocity: 0.0047
+  Episode_Reward/track_angular_velocity: 0.0021
+                 Episode_Reward/upright: 0.0207
+                    Episode_Reward/pose: 0.0254
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0244
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0025
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1110
+            Metrics/twist/error_vel_yaw: 0.0764
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 28.3333
+    Episode_Termination/illegal_contact: 1.7500
+               Metrics/peak_height_mean: 0.1903
+             Metrics/slip_velocity_mean: 0.3204
+             Metrics/landing_force_mean: 190.5771
+--------------------------------------------------------------------------------
+                         Iteration time: 2.37s
+                           Time elapsed: 00:00:53
+                                    ETA: 07:27:41
+
+################################################################################
+[1m                          Learning iteration 20/10000                           [0m
+
+                            Total steps: 516096
+                       Steps per second: 10619
+                        Collection time: 2.205s
+                          Learning time: 0.109s
+                        Mean value loss: 0.0063
+                    Mean surrogate loss: -0.0113
+                      Mean entropy loss: 8.6788
+                            Mean reward: 0.56
+                    Mean episode length: 36.00
+                  Mean action noise std: 0.71
+   Episode_Reward/track_linear_velocity: 0.0053
+  Episode_Reward/track_angular_velocity: 0.0023
+                 Episode_Reward/upright: 0.0215
+                    Episode_Reward/pose: 0.0272
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0246
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0028
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0008
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1133
+            Metrics/twist/error_vel_yaw: 0.0765
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 27.2917
+    Episode_Termination/illegal_contact: 2.3750
+               Metrics/peak_height_mean: 0.1953
+             Metrics/slip_velocity_mean: 0.3168
+             Metrics/landing_force_mean: 190.2530
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:00:56
+                                    ETA: 07:24:39
+
+################################################################################
+[1m                          Learning iteration 21/10000                           [0m
+
+                            Total steps: 540672
+                       Steps per second: 10640
+                        Collection time: 2.202s
+                          Learning time: 0.108s
+                        Mean value loss: 0.0061
+                    Mean surrogate loss: -0.0100
+                      Mean entropy loss: 8.6135
+                            Mean reward: 0.63
+                    Mean episode length: 37.41
+                  Mean action noise std: 0.71
+   Episode_Reward/track_linear_velocity: 0.0059
+  Episode_Reward/track_angular_velocity: 0.0025
+                 Episode_Reward/upright: 0.0225
+                    Episode_Reward/pose: 0.0283
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0249
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0027
+       Episode_Reward/foot_swing_height: -0.0008
+               Episode_Reward/foot_slip: -0.0009
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1181
+            Metrics/twist/error_vel_yaw: 0.0803
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 26.2500
+    Episode_Termination/illegal_contact: 2.5417
+               Metrics/peak_height_mean: 0.1892
+             Metrics/slip_velocity_mean: 0.3177
+             Metrics/landing_force_mean: 187.3405
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:00:58
+                                    ETA: 07:21:52
+
+################################################################################
+[1m                          Learning iteration 22/10000                           [0m
+
+                            Total steps: 565248
+                       Steps per second: 10580
+                        Collection time: 2.216s
+                          Learning time: 0.107s
+                        Mean value loss: 0.0061
+                    Mean surrogate loss: -0.0085
+                      Mean entropy loss: 8.5383
+                            Mean reward: 0.69
+                    Mean episode length: 39.49
+                  Mean action noise std: 0.70
+   Episode_Reward/track_linear_velocity: 0.0062
+  Episode_Reward/track_angular_velocity: 0.0026
+                 Episode_Reward/upright: 0.0240
+                    Episode_Reward/pose: 0.0295
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0256
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0028
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0009
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1255
+            Metrics/twist/error_vel_yaw: 0.0816
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 24.8333
+    Episode_Termination/illegal_contact: 3.4583
+               Metrics/peak_height_mean: 0.1889
+             Metrics/slip_velocity_mean: 0.3186
+             Metrics/landing_force_mean: 182.7945
+--------------------------------------------------------------------------------
+                         Iteration time: 2.32s
+                           Time elapsed: 00:01:00
+                                    ETA: 07:19:24
+
+################################################################################
+[1m                          Learning iteration 23/10000                           [0m
+
+                            Total steps: 589824
+                       Steps per second: 10758
+                        Collection time: 2.177s
+                          Learning time: 0.108s
+                        Mean value loss: 0.0075
+                    Mean surrogate loss: -0.0069
+                      Mean entropy loss: 8.4793
+                            Mean reward: 0.66
+                    Mean episode length: 38.72
+                  Mean action noise std: 0.70
+   Episode_Reward/track_linear_velocity: 0.0066
+  Episode_Reward/track_angular_velocity: 0.0028
+                 Episode_Reward/upright: 0.0247
+                    Episode_Reward/pose: 0.0297
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0255
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0031
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1265
+            Metrics/twist/error_vel_yaw: 0.0819
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 23.7500
+    Episode_Termination/illegal_contact: 3.0833
+               Metrics/peak_height_mean: 0.1882
+             Metrics/slip_velocity_mean: 0.3122
+             Metrics/landing_force_mean: 182.6916
+--------------------------------------------------------------------------------
+                         Iteration time: 2.28s
+                           Time elapsed: 00:01:03
+                                    ETA: 07:16:52
+
+################################################################################
+[1m                          Learning iteration 24/10000                           [0m
+
+                            Total steps: 614400
+                       Steps per second: 10642
+                        Collection time: 2.196s
+                          Learning time: 0.113s
+                        Mean value loss: 0.0072
+                    Mean surrogate loss: -0.0092
+                      Mean entropy loss: 8.4253
+                            Mean reward: 0.77
+                    Mean episode length: 41.16
+                  Mean action noise std: 0.69
+   Episode_Reward/track_linear_velocity: 0.0074
+  Episode_Reward/track_angular_velocity: 0.0031
+                 Episode_Reward/upright: 0.0271
+                    Episode_Reward/pose: 0.0312
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0267
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0029
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1358
+            Metrics/twist/error_vel_yaw: 0.0846
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 23.7083
+    Episode_Termination/illegal_contact: 4.1250
+               Metrics/peak_height_mean: 0.1824
+             Metrics/slip_velocity_mean: 0.3168
+             Metrics/landing_force_mean: 167.7011
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:01:05
+                                    ETA: 07:14:43
+
+################################################################################
+[1m                          Learning iteration 25/10000                           [0m
+
+                            Total steps: 638976
+                       Steps per second: 10610
+                        Collection time: 2.210s
+                          Learning time: 0.106s
+                        Mean value loss: 0.0076
+                    Mean surrogate loss: -0.0080
+                      Mean entropy loss: 8.3550
+                            Mean reward: 0.78
+                    Mean episode length: 41.27
+                  Mean action noise std: 0.69
+   Episode_Reward/track_linear_velocity: 0.0079
+  Episode_Reward/track_angular_velocity: 0.0032
+                 Episode_Reward/upright: 0.0275
+                    Episode_Reward/pose: 0.0314
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0265
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0030
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1364
+            Metrics/twist/error_vel_yaw: 0.0839
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 21.6667
+    Episode_Termination/illegal_contact: 4.6250
+               Metrics/peak_height_mean: 0.1882
+             Metrics/slip_velocity_mean: 0.3080
+             Metrics/landing_force_mean: 174.1561
+--------------------------------------------------------------------------------
+                         Iteration time: 2.32s
+                           Time elapsed: 00:01:07
+                                    ETA: 07:12:46
+
+################################################################################
+[1m                          Learning iteration 26/10000                           [0m
+
+                            Total steps: 663552
+                       Steps per second: 10260
+                        Collection time: 2.282s
+                          Learning time: 0.113s
+                        Mean value loss: 0.0114
+                    Mean surrogate loss: -0.0069
+                      Mean entropy loss: 8.2902
+                            Mean reward: 0.83
+                    Mean episode length: 43.07
+                  Mean action noise std: 0.68
+   Episode_Reward/track_linear_velocity: 0.0078
+  Episode_Reward/track_angular_velocity: 0.0035
+                 Episode_Reward/upright: 0.0287
+                    Episode_Reward/pose: 0.0321
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0270
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0031
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1429
+            Metrics/twist/error_vel_yaw: 0.0836
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 22.2500
+    Episode_Termination/illegal_contact: 6.2917
+               Metrics/peak_height_mean: 0.1837
+             Metrics/slip_velocity_mean: 0.3136
+             Metrics/landing_force_mean: 173.2555
+--------------------------------------------------------------------------------
+                         Iteration time: 2.40s
+                           Time elapsed: 00:01:10
+                                    ETA: 07:11:26
+
+################################################################################
+[1m                          Learning iteration 27/10000                           [0m
+
+                            Total steps: 688128
+                       Steps per second: 9905
+                        Collection time: 2.368s
+                          Learning time: 0.113s
+                        Mean value loss: 0.0179
+                    Mean surrogate loss: -0.0022
+                      Mean entropy loss: 8.2169
+                            Mean reward: 0.83
+                    Mean episode length: 42.64
+                  Mean action noise std: 0.67
+   Episode_Reward/track_linear_velocity: 0.0082
+  Episode_Reward/track_angular_velocity: 0.0037
+                 Episode_Reward/upright: 0.0301
+                    Episode_Reward/pose: 0.0325
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0272
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0033
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1453
+            Metrics/twist/error_vel_yaw: 0.0852
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 20.0833
+    Episode_Termination/illegal_contact: 6.3750
+               Metrics/peak_height_mean: 0.1807
+             Metrics/slip_velocity_mean: 0.3066
+             Metrics/landing_force_mean: 164.5458
+--------------------------------------------------------------------------------
+                         Iteration time: 2.48s
+                           Time elapsed: 00:01:12
+                                    ETA: 07:10:43
+
+################################################################################
+[1m                          Learning iteration 28/10000                           [0m
+
+                            Total steps: 712704
+                       Steps per second: 10069
+                        Collection time: 2.328s
+                          Learning time: 0.113s
+                        Mean value loss: 0.0104
+                    Mean surrogate loss: -0.0055
+                      Mean entropy loss: 8.1658
+                            Mean reward: 0.87
+                    Mean episode length: 42.60
+                  Mean action noise std: 0.67
+   Episode_Reward/track_linear_velocity: 0.0089
+  Episode_Reward/track_angular_velocity: 0.0039
+                 Episode_Reward/upright: 0.0306
+                    Episode_Reward/pose: 0.0321
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0270
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0030
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0010
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1463
+            Metrics/twist/error_vel_yaw: 0.0816
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 22.3333
+    Episode_Termination/illegal_contact: 6.5833
+               Metrics/peak_height_mean: 0.1848
+             Metrics/slip_velocity_mean: 0.3099
+             Metrics/landing_force_mean: 169.9613
+--------------------------------------------------------------------------------
+                         Iteration time: 2.44s
+                           Time elapsed: 00:01:15
+                                    ETA: 07:09:48
+
+################################################################################
+[1m                          Learning iteration 29/10000                           [0m
+
+                            Total steps: 737280
+                       Steps per second: 10233
+                        Collection time: 2.294s
+                          Learning time: 0.108s
+                        Mean value loss: 0.0104
+                    Mean surrogate loss: -0.0033
+                      Mean entropy loss: 8.0920
+                            Mean reward: 0.95
+                    Mean episode length: 44.27
+                  Mean action noise std: 0.66
+   Episode_Reward/track_linear_velocity: 0.0099
+  Episode_Reward/track_angular_velocity: 0.0042
+                 Episode_Reward/upright: 0.0314
+                    Episode_Reward/pose: 0.0322
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0270
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0030
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1422
+            Metrics/twist/error_vel_yaw: 0.0785
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 18.5000
+    Episode_Termination/illegal_contact: 5.8750
+               Metrics/peak_height_mean: 0.1807
+             Metrics/slip_velocity_mean: 0.2995
+             Metrics/landing_force_mean: 170.0507
+--------------------------------------------------------------------------------
+                         Iteration time: 2.40s
+                           Time elapsed: 00:01:17
+                                    ETA: 07:08:44
+
+################################################################################
+[1m                          Learning iteration 30/10000                           [0m
+
+                            Total steps: 761856
+                       Steps per second: 10244
+                        Collection time: 2.288s
+                          Learning time: 0.110s
+                        Mean value loss: 0.0093
+                    Mean surrogate loss: -0.0033
+                      Mean entropy loss: 8.0126
+                            Mean reward: 0.96
+                    Mean episode length: 44.74
+                  Mean action noise std: 0.66
+   Episode_Reward/track_linear_velocity: 0.0099
+  Episode_Reward/track_angular_velocity: 0.0044
+                 Episode_Reward/upright: 0.0324
+                    Episode_Reward/pose: 0.0330
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0272
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0031
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1461
+            Metrics/twist/error_vel_yaw: 0.0790
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 20.3333
+    Episode_Termination/illegal_contact: 7.4167
+               Metrics/peak_height_mean: 0.1810
+             Metrics/slip_velocity_mean: 0.3079
+             Metrics/landing_force_mean: 167.5789
+--------------------------------------------------------------------------------
+                         Iteration time: 2.40s
+                           Time elapsed: 00:01:19
+                                    ETA: 07:07:43
+
+################################################################################
+[1m                          Learning iteration 31/10000                           [0m
+
+                            Total steps: 786432
+                       Steps per second: 10078
+                        Collection time: 2.320s
+                          Learning time: 0.118s
+                        Mean value loss: 0.0091
+                    Mean surrogate loss: -0.0040
+                      Mean entropy loss: 7.9528
+                            Mean reward: 1.02
+                    Mean episode length: 47.51
+                  Mean action noise std: 0.65
+   Episode_Reward/track_linear_velocity: 0.0097
+  Episode_Reward/track_angular_velocity: 0.0047
+                 Episode_Reward/upright: 0.0342
+                    Episode_Reward/pose: 0.0335
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0278
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0034
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1526
+            Metrics/twist/error_vel_yaw: 0.0833
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 17.1667
+    Episode_Termination/illegal_contact: 7.7917
+               Metrics/peak_height_mean: 0.1820
+             Metrics/slip_velocity_mean: 0.2983
+             Metrics/landing_force_mean: 161.1049
+--------------------------------------------------------------------------------
+                         Iteration time: 2.44s
+                           Time elapsed: 00:01:22
+                                    ETA: 07:06:58
+
+################################################################################
+[1m                          Learning iteration 32/10000                           [0m
+
+                            Total steps: 811008
+                       Steps per second: 10136
+                        Collection time: 2.314s
+                          Learning time: 0.111s
+                        Mean value loss: 0.0090
+                    Mean surrogate loss: -0.0014
+                      Mean entropy loss: 7.8852
+                            Mean reward: 1.03
+                    Mean episode length: 46.17
+                  Mean action noise std: 0.65
+   Episode_Reward/track_linear_velocity: 0.0106
+  Episode_Reward/track_angular_velocity: 0.0049
+                 Episode_Reward/upright: 0.0351
+                    Episode_Reward/pose: 0.0334
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0275
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0031
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1540
+            Metrics/twist/error_vel_yaw: 0.0828
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 19.2917
+    Episode_Termination/illegal_contact: 8.4583
+               Metrics/peak_height_mean: 0.1825
+             Metrics/slip_velocity_mean: 0.3073
+             Metrics/landing_force_mean: 158.3529
+--------------------------------------------------------------------------------
+                         Iteration time: 2.42s
+                           Time elapsed: 00:01:24
+                                    ETA: 07:06:12
+
+################################################################################
+[1m                          Learning iteration 33/10000                           [0m
+
+                            Total steps: 835584
+                       Steps per second: 10180
+                        Collection time: 2.302s
+                          Learning time: 0.112s
+                        Mean value loss: 0.0092
+                    Mean surrogate loss: -0.0047
+                      Mean entropy loss: 7.8348
+                            Mean reward: 1.00
+                    Mean episode length: 46.96
+                  Mean action noise std: 0.64
+   Episode_Reward/track_linear_velocity: 0.0108
+  Episode_Reward/track_angular_velocity: 0.0052
+                 Episode_Reward/upright: 0.0357
+                    Episode_Reward/pose: 0.0330
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0276
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0035
+       Episode_Reward/foot_swing_height: -0.0011
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1570
+            Metrics/twist/error_vel_yaw: 0.0833
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 14.6250
+    Episode_Termination/illegal_contact: 9.2917
+               Metrics/peak_height_mean: 0.1826
+             Metrics/slip_velocity_mean: 0.2987
+             Metrics/landing_force_mean: 154.0825
+--------------------------------------------------------------------------------
+                         Iteration time: 2.41s
+                           Time elapsed: 00:01:27
+                                    ETA: 07:05:25
+
+################################################################################
+[1m                          Learning iteration 34/10000                           [0m
+
+                            Total steps: 860160
+                       Steps per second: 10478
+                        Collection time: 2.231s
+                          Learning time: 0.115s
+                        Mean value loss: 0.0087
+                    Mean surrogate loss: -0.0041
+                      Mean entropy loss: 7.7776
+                            Mean reward: 1.11
+                    Mean episode length: 48.64
+                  Mean action noise std: 0.64
+   Episode_Reward/track_linear_velocity: 0.0115
+  Episode_Reward/track_angular_velocity: 0.0055
+                 Episode_Reward/upright: 0.0372
+                    Episode_Reward/pose: 0.0333
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0280
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0034
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1595
+            Metrics/twist/error_vel_yaw: 0.0819
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 15.7500
+    Episode_Termination/illegal_contact: 11.8750
+               Metrics/peak_height_mean: 0.1801
+             Metrics/slip_velocity_mean: 0.3102
+             Metrics/landing_force_mean: 156.0312
+--------------------------------------------------------------------------------
+                         Iteration time: 2.35s
+                           Time elapsed: 00:01:29
+                                    ETA: 07:04:21
+
+################################################################################
+[1m                          Learning iteration 35/10000                           [0m
+
+                            Total steps: 884736
+                       Steps per second: 10217
+                        Collection time: 2.278s
+                          Learning time: 0.127s
+                        Mean value loss: 0.0131
+                    Mean surrogate loss: -0.0053
+                      Mean entropy loss: 7.6948
+                            Mean reward: 1.07
+                    Mean episode length: 48.57
+                  Mean action noise std: 0.63
+   Episode_Reward/track_linear_velocity: 0.0112
+  Episode_Reward/track_angular_velocity: 0.0058
+                 Episode_Reward/upright: 0.0378
+                    Episode_Reward/pose: 0.0331
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0279
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0033
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0013
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1599
+            Metrics/twist/error_vel_yaw: 0.0816
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 12.5417
+    Episode_Termination/illegal_contact: 11.7917
+               Metrics/peak_height_mean: 0.1762
+             Metrics/slip_velocity_mean: 0.3042
+             Metrics/landing_force_mean: 147.4207
+--------------------------------------------------------------------------------
+                         Iteration time: 2.41s
+                           Time elapsed: 00:01:31
+                                    ETA: 07:03:37
+
+################################################################################
+[1m                          Learning iteration 36/10000                           [0m
+
+                            Total steps: 909312
+                       Steps per second: 10726
+                        Collection time: 2.182s
+                          Learning time: 0.109s
+                        Mean value loss: 0.0099
+                    Mean surrogate loss: -0.0037
+                      Mean entropy loss: 7.6036
+                            Mean reward: 1.14
+                    Mean episode length: 49.67
+                  Mean action noise std: 0.62
+   Episode_Reward/track_linear_velocity: 0.0115
+  Episode_Reward/track_angular_velocity: 0.0061
+                 Episode_Reward/upright: 0.0380
+                    Episode_Reward/pose: 0.0336
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0276
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0032
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1608
+            Metrics/twist/error_vel_yaw: 0.0776
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 15.1250
+    Episode_Termination/illegal_contact: 12.1667
+               Metrics/peak_height_mean: 0.1811
+             Metrics/slip_velocity_mean: 0.3058
+             Metrics/landing_force_mean: 163.6053
+--------------------------------------------------------------------------------
+                         Iteration time: 2.29s
+                           Time elapsed: 00:01:34
+                                    ETA: 07:02:24
+
+################################################################################
+[1m                          Learning iteration 37/10000                           [0m
+
+                            Total steps: 933888
+                       Steps per second: 10722
+                        Collection time: 2.188s
+                          Learning time: 0.104s
+                        Mean value loss: 0.0526
+                    Mean surrogate loss: -0.0023
+                      Mean entropy loss: 7.5517
+                            Mean reward: 1.20
+                    Mean episode length: 50.15
+                  Mean action noise std: 0.62
+   Episode_Reward/track_linear_velocity: 0.0113
+  Episode_Reward/track_angular_velocity: 0.0065
+                 Episode_Reward/upright: 0.0384
+                    Episode_Reward/pose: 0.0349
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0002
+          Episode_Reward/action_rate_l2: -0.0275
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0053
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1597
+            Metrics/twist/error_vel_yaw: 0.0799
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 14.9583
+    Episode_Termination/illegal_contact: 11.0417
+               Metrics/peak_height_mean: 0.1800
+             Metrics/slip_velocity_mean: 0.3020
+             Metrics/landing_force_mean: 156.9666
+--------------------------------------------------------------------------------
+                         Iteration time: 2.29s
+                           Time elapsed: 00:01:36
+                                    ETA: 07:01:16
+
+################################################################################
+[1m                          Learning iteration 38/10000                           [0m
+
+                            Total steps: 958464
+                       Steps per second: 10630
+                        Collection time: 2.193s
+                          Learning time: 0.119s
+                        Mean value loss: 0.0089
+                    Mean surrogate loss: -0.0045
+                      Mean entropy loss: 7.5410
+                            Mean reward: 1.23
+                    Mean episode length: 50.44
+                  Mean action noise std: 0.62
+   Episode_Reward/track_linear_velocity: 0.0107
+  Episode_Reward/track_angular_velocity: 0.0068
+                 Episode_Reward/upright: 0.0391
+                    Episode_Reward/pose: 0.0361
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0275
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0034
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1637
+            Metrics/twist/error_vel_yaw: 0.0798
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 13.4583
+    Episode_Termination/illegal_contact: 12.5000
+               Metrics/peak_height_mean: 0.1793
+             Metrics/slip_velocity_mean: 0.3025
+             Metrics/landing_force_mean: 147.2254
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:01:38
+                                    ETA: 07:00:15
+
+################################################################################
+[1m                          Learning iteration 39/10000                           [0m
+
+                            Total steps: 983040
+                       Steps per second: 10824
+                        Collection time: 2.159s
+                          Learning time: 0.112s
+                        Mean value loss: 0.0092
+                    Mean surrogate loss: -0.0058
+                      Mean entropy loss: 7.4997
+                            Mean reward: 1.24
+                    Mean episode length: 51.18
+                  Mean action noise std: 0.62
+   Episode_Reward/track_linear_velocity: 0.0116
+  Episode_Reward/track_angular_velocity: 0.0068
+                 Episode_Reward/upright: 0.0391
+                    Episode_Reward/pose: 0.0355
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0271
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0032
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1605
+            Metrics/twist/error_vel_yaw: 0.0788
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 13.0000
+    Episode_Termination/illegal_contact: 12.2083
+               Metrics/peak_height_mean: 0.1789
+             Metrics/slip_velocity_mean: 0.2986
+             Metrics/landing_force_mean: 157.0180
+--------------------------------------------------------------------------------
+                         Iteration time: 2.27s
+                           Time elapsed: 00:01:40
+                                    ETA: 06:59:08
+
+################################################################################
+[1m                          Learning iteration 40/10000                           [0m
+
+                            Total steps: 1007616
+                       Steps per second: 10647
+                        Collection time: 2.195s
+                          Learning time: 0.114s
+                        Mean value loss: 0.0108
+                    Mean surrogate loss: -0.0022
+                      Mean entropy loss: 7.4352
+                            Mean reward: 1.28
+                    Mean episode length: 51.99
+                  Mean action noise std: 0.61
+   Episode_Reward/track_linear_velocity: 0.0117
+  Episode_Reward/track_angular_velocity: 0.0072
+                 Episode_Reward/upright: 0.0400
+                    Episode_Reward/pose: 0.0365
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0277
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0035
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1651
+            Metrics/twist/error_vel_yaw: 0.0770
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 13.9583
+    Episode_Termination/illegal_contact: 11.6250
+               Metrics/peak_height_mean: 0.1820
+             Metrics/slip_velocity_mean: 0.3033
+             Metrics/landing_force_mean: 147.5911
+--------------------------------------------------------------------------------
+                         Iteration time: 2.31s
+                           Time elapsed: 00:01:43
+                                    ETA: 06:58:13
+
+################################################################################
+[1m                          Learning iteration 41/10000                           [0m
+
+                            Total steps: 1032192
+                       Steps per second: 10226
+                        Collection time: 2.284s
+                          Learning time: 0.119s
+                        Mean value loss: 0.0116
+                    Mean surrogate loss: 0.0015
+                      Mean entropy loss: 7.3840
+                            Mean reward: 1.27
+                    Mean episode length: 50.96
+                  Mean action noise std: 0.61
+   Episode_Reward/track_linear_velocity: 0.0126
+  Episode_Reward/track_angular_velocity: 0.0073
+                 Episode_Reward/upright: 0.0402
+                    Episode_Reward/pose: 0.0373
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0273
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0034
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1620
+            Metrics/twist/error_vel_yaw: 0.0767
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 13.7500
+    Episode_Termination/illegal_contact: 10.6250
+               Metrics/peak_height_mean: 0.1826
+             Metrics/slip_velocity_mean: 0.2885
+             Metrics/landing_force_mean: 155.2887
+--------------------------------------------------------------------------------
+                         Iteration time: 2.40s
+                           Time elapsed: 00:01:45
+                                    ETA: 06:57:43
+
+################################################################################
+[1m                          Learning iteration 42/10000                           [0m
+
+                            Total steps: 1056768
+                       Steps per second: 10166
+                        Collection time: 2.302s
+                          Learning time: 0.115s
+                        Mean value loss: 0.0110
+                    Mean surrogate loss: -0.0033
+                      Mean entropy loss: 7.3208
+                            Mean reward: 1.27
+                    Mean episode length: 51.54
+                  Mean action noise std: 0.60
+   Episode_Reward/track_linear_velocity: 0.0128
+  Episode_Reward/track_angular_velocity: 0.0076
+                 Episode_Reward/upright: 0.0411
+                    Episode_Reward/pose: 0.0373
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0278
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0033
+       Episode_Reward/foot_swing_height: -0.0009
+               Episode_Reward/foot_slip: -0.0011
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1647
+            Metrics/twist/error_vel_yaw: 0.0786
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 12.4583
+    Episode_Termination/illegal_contact: 11.4583
+               Metrics/peak_height_mean: 0.1832
+             Metrics/slip_velocity_mean: 0.2848
+             Metrics/landing_force_mean: 154.6501
+--------------------------------------------------------------------------------
+                         Iteration time: 2.42s
+                           Time elapsed: 00:01:48
+                                    ETA: 06:57:17
+
+################################################################################
+[1m                          Learning iteration 43/10000                           [0m
+
+                            Total steps: 1081344
+                       Steps per second: 10132
+                        Collection time: 2.316s
+                          Learning time: 0.109s
+                        Mean value loss: 0.0122
+                    Mean surrogate loss: -0.0038
+                      Mean entropy loss: 7.2571
+                            Mean reward: 1.31
+                    Mean episode length: 52.44
+                  Mean action noise std: 0.60
+   Episode_Reward/track_linear_velocity: 0.0126
+  Episode_Reward/track_angular_velocity: 0.0079
+                 Episode_Reward/upright: 0.0411
+                    Episode_Reward/pose: 0.0385
+            Episode_Reward/body_ang_vel: 0.0000
+        Episode_Reward/angular_momentum: 0.0000
+          Episode_Reward/dof_pos_limits: -0.0001
+          Episode_Reward/action_rate_l2: -0.0274
+                Episode_Reward/air_time: 0.0000
+          Episode_Reward/foot_clearance: -0.0035
+       Episode_Reward/foot_swing_height: -0.0010
+               Episode_Reward/foot_slip: -0.0012
+            Episode_Reward/soft_landing: -0.0000
+              Curriculum/terrain_levels: 0.0000
+   Curriculum/command_vel/lin_vel_x_min: -1.0000
+   Curriculum/command_vel/lin_vel_x_max: 1.0000
+   Curriculum/command_vel/lin_vel_y_min: -1.0000
+   Curriculum/command_vel/lin_vel_y_max: 1.0000
+   Curriculum/command_vel/ang_vel_z_min: -0.5000
+   Curriculum/command_vel/ang_vel_z_max: 0.5000
+             Metrics/twist/error_vel_xy: 0.1644
+            Metrics/twist/error_vel_yaw: 0.0774
+           Episode_Termination/time_out: 0.0000
+          Episode_Termination/fell_over: 14.1667
+    Episode_Termination/illegal_contact: 10.7500
+               Metrics/peak_height_mean: 0.1802
+             Metrics/slip_velocity_mean: 0.2918
+             Metrics/landing_force_mean: 146.0035
+--------------------------------------------------------------------------------
+                         Iteration time: 2.43s
+                           Time elapsed: 00:01:50
+                                    ETA: 06:56:54

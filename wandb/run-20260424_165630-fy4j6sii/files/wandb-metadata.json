@@ -1,0 +1,45 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.13.9",
+  "startedAt":  "2026-04-24T08:56:30.961123Z",
+  "args":  [
+    "Mjlab-Velocity-Rough-Tron-Pro",
+    "--env.scene.num-envs",
+    "1024",
+    "--agent.max-iterations",
+    "10_000"
+  ],
+  "program":  "-m __main__",
+  "git":  {
+    "remote":  "https://github.com/WHYP2W/mjlab-robotics.git",
+    "commit":  "cc09e237eeb99c465fa5f3381c0dabc70848550b"
+  },
+  "email":  "2323374400@qq.com",
+  "root":  "C:\\Users\\why\\Documents\\mjlab-robotics",
+  "host":  "DESKTOP-TBGIR9N",
+  "executable":  "C:\\Users\\why\\Documents\\mjlab-robotics\\.venv\\Scripts\\python.exe",
+  "cpu_count":  16,
+  "cpu_count_logical":  24,
+  "gpu":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "534961016832",
+      "used":  "497764761600"
+    }
+  },
+  "memory":  {
+    "total":  "34124718080"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "memoryTotal":  "8585740288",
+      "cudaCores":  3072,
+      "architecture":  "Ada",
+      "uuid":  "GPU-80da73c7-c569-d182-7c3d-822437ea63db"
+    }
+  ],
+  "cudaVersion":  "13.2",
+  "writerId":  "gqmvuhz7pjq4yrxwqq702clp2oqpd78l"
+}
