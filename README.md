@@ -76,23 +76,6 @@ register_mjlab_task(
 )
 ```
 
-## 使用方法
-
-```sh
-# 健全性检查：观察机器人在零动作下站立然后倒下的过程
-uv run play Mjlab-Velocity-Flat-Anymal-C --agent zero
-
-# 训练
-CUDA_VISIBLE_DEVICES=0 uv run train Mjlab-Velocity-Flat-Anymal-C \
-  --env.scene.num-envs 4096 \
-  --agent.max-iterations 3_000
-
-# 回放训练好的模型检查点
-uv run play Mjlab-Velocity-Flat-Anymal-C --wandb-run-path <wandb-run-path>
-```
-
----
-
 # 新增任务：TRON2 Pro 双足机器人速度跟踪
 
 本仓库在 ANYmal C 示例基础上扩展，增加了一个 **双足机器人 TRON2 Pro** 的速度跟踪任务，用于演示如何把 mjlab 的通用任务框架复用到不同形态的机器人上。

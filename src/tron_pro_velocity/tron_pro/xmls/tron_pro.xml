@@ -47,6 +47,29 @@
     <geom name="floor" rgba="0.5 0.6 0.7 1" pos="0 0 0" size="0 0 0.25" type="plane" material="matplane" condim="3"/>
     <camera name="track" mode="trackcom" pos="0 -2.3 1.6" xyaxes="1 0 0 0 0.707 0.707"/>
     <light directional="true" diffuse=".8 .8 .8" pos="0 0 10" dir="0 0 -10"/>
+    <!-- Standard badminton court (doubles), visual-only markings in meters -->
+    <geom name="court_fill" type="box" pos="0 0 0.001" size="6.7 3.05 0.001" rgba="0.12 0.45 0.18 1" contype="0" conaffinity="0"/>
+    <!-- Outer boundary lines -->
+    <geom name="court_outer_top" type="box" pos="0 3.05 0.002" size="6.7 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_outer_bottom" type="box" pos="0 -3.05 0.002" size="6.7 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_outer_left" type="box" pos="-6.7 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_outer_right" type="box" pos="6.7 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Center (net) line -->
+    <geom name="court_center_line" type="box" pos="0 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Short service lines (1.98m from net on each side) -->
+    <geom name="court_short_service_left" type="box" pos="-1.98 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_short_service_right" type="box" pos="1.98 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Doubles long service lines (0.76m inside back boundary) -->
+    <geom name="court_long_service_left" type="box" pos="-5.94 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_long_service_right" type="box" pos="5.94 0 0.002" size="0.02 3.05 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Singles side lines -->
+    <geom name="court_single_top" type="box" pos="0 2.59 0.002" size="6.7 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_single_bottom" type="box" pos="0 -2.59 0.002" size="6.7 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Center service lines (split left/right courts) -->
+    <geom name="court_center_service_left" type="box" pos="-3.96 0 0.002" size="1.98 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <geom name="court_center_service_right" type="box" pos="3.96 0 0.002" size="1.98 0.02 0.001" rgba="1 1 1 1" contype="0" conaffinity="0"/>
+    <!-- Simplified integrated badminton net system (net + poles as one body) -->
+    <geom name="net_system" type="box" pos="0 0 0.78" size="0.02 3.08 0.78" rgba="0.75 0.75 0.75 0.5" contype="1" conaffinity="1"/>
 
     <!-- Floating base of the robot -->
     <body name="base" pos="0 0 0.85">
